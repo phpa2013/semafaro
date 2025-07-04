@@ -1,5 +1,7 @@
 # Projeto Semáforo JS 🚦
 
+https://phpa2013.github.io/semafaro/
+
 Um semáforo funcional feito com HTML, CSS e JavaScript, com:
 
 - Botões para acionar cores manualmente
