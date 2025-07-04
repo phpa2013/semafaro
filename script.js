@@ -143,7 +143,7 @@ tempoVermelho = setTimeout(()=> {
 tempoLoop = setTimeout(()=> {
  if(aux){}
  autoSemafaro()
-})
+},times.vermelho)
 
 
 
@@ -153,5 +153,5 @@ tempoLoop = setTimeout(()=> {
 }, times.verde)
 
  
-},times.vermelho)
+}
 })()
