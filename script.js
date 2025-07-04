@@ -1,4 +1,4 @@
-;(function(){
+   ;(function(){
  'use strict'
 
 
@@ -127,29 +127,21 @@ function semafaroAuto(e){
 
 // funçao para automatizar
 
+function autoSemafaro() {
+  apagarLuzes();
+  acenderVerde();
 
-function autoSemafaro(){
- apagarLuzes()
- acenderVerde()
+  tempoAmarelo = setTimeout(() => {
+    acenderAmarelo();
+  }, times.verde);
 
-tempoAmarelo = setTimeout(()=> {
- acenderAmarelo()
+  tempoVermelho = setTimeout(() => {
+    acenderVermelho();
+  }, times.verde + times.amarelo);
 
-tempoVermelho = setTimeout(()=> {
- acenderVermelho()
-
-tempoLoop = setTimeout(()=> {
- if(aux){}
- autoSemafaro()
-},times.vermelho)
-
-
-
-}, times.amarelo)
-
-
-}, times.verde)
-
- 
+  tempoLoop = setTimeout(() => {
+    if (aux) autoSemafaro();
+  }, times.verde + times.amarelo + times.vermelho);
 }
+
 })()
