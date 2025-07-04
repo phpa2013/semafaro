@@ -1,0 +1,71 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ background-color: #ccc;
+}
+
+h1{
+ text-align: center;
+ text-transform: uppercase;
+ margin-top: 2em;
+ margin-bottom: 0;
+}
+
+.container{
+ background-color: white;
+ width: fit-content;
+ padding: 1em;
+ box-shadow: 0 0 10px black;
+ margin: 3em auto;
+ border-radius: 2em;
+}
+.content{
+ box-shadow: 0 0 10px black;
+ padding: 1em;
+ border-radius: 2em;
+}
+
+.content div{
+ display: block;
+ width: 5em;
+ height: 5em;
+ margin: 1em auto;
+ border-radius: 50%;
+ border: 2px solid #ccc;
+ transition: background-color 1s ease;
+}
+
+button{
+ padding: .5em;
+ font-family: sans-serif;
+ margin: 1em .25em .25em;
+ text-transform: uppercase;
+ border-radius: 1em;
+}
+
+.divVermelha.aceso{
+ box-shadow: 0 0 10px 5px  red inset;
+ background-color: red;
+}
+
+.divAmarela.aceso{
+ box-shadow: 0 0 10px 6px  yellow inset;
+ background-color: yellow;
+}
+
+.divVerde.aceso{
+ box-shadow: 0 0 10px 6px green  inset;
+ background-color: green;
+}
+.btnVerde{
+ background-color: green;
+}
+.btnAmarelo{
+ background-color: yellow;
+}
+.btnVermelho{
+ background-color: red;
+}
