@@ -45,9 +45,7 @@ divVermelho.classList.add('divVermelha')
 divAmarelo.classList.add('divAmarela')
 divVerde.classList.add('divVerde')
 
-btnVerde.classList.add('btnVerde')
-btnAmarelo.classList.add('btnAmarelo')
-btnVermelho.classList.add('btnVermelho')
+
 btnAuto.classList.add('btnAuto')
 
 
