@@ -153,5 +153,5 @@ tempoLoop = setTimeout(()=> {
 }, times.verde)
 
  
-}
+},times.vermelho)
 })()
