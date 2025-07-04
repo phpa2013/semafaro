@@ -126,22 +126,19 @@ function semafaroAuto(e){
 
 
 // funçao para automatizar
+tempoAmarelo = setTimeout(()=> {
+  acenderAmarelo()
 
-function autoSemafaro() {
-  apagarLuzes();
-  acenderVerde();
+  tempoVermelho = setTimeout(()=> {
+    acenderVermelho()
 
-  tempoAmarelo = setTimeout(() => {
-    acenderAmarelo();
-  }, times.verde);
+    tempoLoop = setTimeout(()=> {
+      if(aux){}
+      autoSemafaro()
+    },times.vermelho)
 
-  tempoVermelho = setTimeout(() => {
-    acenderVermelho();
-  }, times.verde + times.amarelo);
+  }, times.amarelo)
 
-  tempoLoop = setTimeout(() => {
-    if (aux) autoSemafaro();
-  }, times.verde + times.amarelo + times.vermelho);
-}
+}, times.verde)
 
 })()
